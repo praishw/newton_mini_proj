@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+#heading{
+    font-weight: bolder;
+    background-color: peachpuff;
+    text-align: center;
+    padding: 10px;
+    font-size: 50px;
+}
+.main-body {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: minmax(300px , auto)1fr;   
+    grid-template-areas: "navbar mainContent";
+    grid-gap: 20px;
+    background-color:pink;
+}
+#navbar {
+    grid-area: navbar;
+    position: fixed;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+   #navbar a {
+    display: block;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px 0;
+    text-decoration: none;
+    color: black;
+}
+   #main-doc {
+    grid-area: mainContent;
+    background-color: azure;
+    padding: 20px;
+}
+   
+header {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+   
+code {
+    background-color: #CCC;
+    display: block;
+    padding: 20px;
+}

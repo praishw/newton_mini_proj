@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DSA Technical Document </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="heading">Data Structure Algorithm</div>
+        <div class="main-body">
+        <nav id="navbar">
+            <header>Documentation Menu</header>
+            <a href="#Intro" class="nav-link">
+                What is Data Structure</a>
+            <a href="#Array" class="nav-link">
+                Array</a>
+            <a href="#Sorting" class="nav-link">
+                Sorting</a>
+            <a href="#Searching" class="nav-link">
+                Searching</a>
+            <a href="#LinkedList " class="nav-link">
+                Linked List</a>
+            <a href="#Stack" class="nav-link">
+                Stack</a>
+            <a href="#Queue" class="nav-link">
+                Queue</a>
+            <a href="#Tree" class="nav-link">
+                Tree</a>
+            <a href="#Graph" class="nav-link">
+                Graph</a>
+        </nav>
+  
+        <main id="main-doc">
+            <section class="main-section" id="Intro">
+                <header>
+                    What is Data Structure?
+                </header>
+                <p>
+                    Data Structures (DS) tutorial provides basic and advanced concepts of Data Structure. Our Data Structure tutorial is designed for beginners and professionals.
+
+                    Data Structure is a way to store and organize data so that it can be used efficiently.
+                    
+                    Our Data Structure tutorial includes all topics of Data Structure such as Array, Pointer, Structure, Linked List, Stack, Queue, Graph, Searching, Sorting, Programs, etc.
+                    <br><br>
+                    
+                   <b> What is Data Structure? </b><br>
+                    The data structure name indicates itself that organizing the data in memory. There are many ways of organizing the data in the memory as we have already seen one of the data structures, i.e., array in C language. Array is a collection of memory elements in which data is stored sequentially, i.e., one after another. In other words, we can say that array stores the elements in a continuous manner. This organization of data is  done with the help of an array of data structures. There are also other ways to organize the data in memory. Let's see the different types of data structures.
+                </p>
+                <p>
+                    The data structure is not any programming language like C, C++, java, etc. It is a set of algorithms that we can use in any programming language to structure the data in the memory.
+                    To structure the data in memory, 'n' number of algorithms were proposed, and all these algorithms are known as Abstract data types. These abstract data types are the set of rules.
+
+
+                </p>
+                <img src="	https://static.javatpoint.com/ds/images/data-structure-tutorial2.png" alt="Data Strucute">
+                <br>
+
+                <p><b>Types of Data Structures</b>
+                    <br>
+                    There are two types of data structures:
+                    <ul>
+                        <li>Primitive data structure</li>
+                        <li>Non-primitive data structure</li>
+                    </ul>
+                    <b>1. Primitive data structure:-</b>
+                    The primitive data structures are primitive data types. The int, char, float, double, and pointer are the primitive data structures that can hold a single value<br><br>
+                    <b>2. Non-Primitive Data structure:-</b>
+                    
+                    The non-primitive data structure is divided into two types:
+                    <ul>
+                        <li><b>Linear data structure:-</b></li>
+                        The arrangement of data in a sequential manner is known as a linear data structure. The data structures used for this purpose are Arrays, Linked list, Stacks, and Queues. In these data structures, one element is connected to only one another element in a linear form.<br><br>
+                        <li><b>Non-linear data structure:-</b> </li>
+                        When one element is connected to the 'n' number of elements known as a non-linear data structure. The best example is trees and graphs. In this case, the elements are arranged in a random manner.
+                    </ul>
+                </P>          
+                 <p>
+                    <b>Data structures can also be classified as:</b>
+                    <br>
+                    <ul>
+                        <li><b> Static data structure:</b></li>
+                        It is a type of data structure where the size is allocated at the compile time. Therefore, the maximum size is fixed.
+                        <li><b> Dynamic data structure:</b></li>
+                        It is a type of data structure where the size is allocated at the run time. Therefore, the maximum size is flexible.
+                    </ul>
+                    <b>Major Operations</b><br>
+                    The major or the common operations that can be performed on the data structures are:
+                    <br><br>
+                    <b>Searching:</b> We can search for any element in a data structure.<br>
+                    <b>Sorting:</b> We can sort the elements of a data structure either in an ascending or descending order.<br>
+                    <b>Insertion:</b> We can also insert the new element in a data structure.<br>
+                    <b>Updation:</b> We can also update the element, i.e., we can replace the element with another element.<br>
+                    <b>Deletion: </b>We can also perform the delete operation to remove the element from the data structure.<br>
+                    <br>
+                    <b>Which Data Structure?</b><br>
+                    A data structure is a way of organizing the data so that it can be used efficiently. Here, we have used the word efficiently, which in terms of both the space and time. For example, a stack is an ADT (Abstract data type) which uses either arrays or linked list data structure for the implementation. Therefore, we conclude that we require some data structure to implement a particular ADT.<br>
+                    
+                    An ADT tells what is to be done and data structure tells how it is to be done. In other words, we can say that ADT gives us the blueprint while data structure provides the implementation part. Now the question arises: how can one get to know which data structure to be used for a particular ADT?.<br><br>
+                    
+                    As the different data structures can be implemented in a particular ADT, but the different implementations are compared for time and space. For example, the Stack ADT can be implemented by both Arrays and linked list. Suppose the array is providing time efficiency while the linked list is providing space efficiency, so the one which is the best suited for the current user's requirements will be selected.<br><br>
+                    
+                    
+                    <b>Advantages of Data structures</b><br>
+                    The following are the advantages of a data structure:
+                    
+                    Efficiency: If the choice of a data structure for implementing a particular ADT is proper, it makes the program very efficient in terms of time and space.
+                    Reusability: The data structure provides reusability means that multiple client programs can use the data structure.<br>
+                    Abstraction: The data structure specified by an ADT also provides the level of abstraction. The client cannot see the internal working of the data structure, so it does not have to worry about the implementation part. The client can only see the interface.
+                </p>
+            </section>
+  
+            <section class="main-section" id="Array">
+                <header>
+                    Array 
+                </header>
+                <p>
+                    In this article, we will discuss the array in data structure. Arrays are defined as the collection of similar types of data items stored at contiguous memory locations. It is one of the simplest data structures where each data element can be randomly accessed by using its index number.<br><br>
+
+                    In  programming, they are the derived data types that can store the primitive type of data such as int, char, double, float, etc. For example, if we want to store the marks of a student in 6 subjects, then we don't need to define a different variable for the marks in different subjects. Instead, we can define an array that can store the marks in each subject at the contiguous memory locations.<br><br>
+                    
+                    <b>Properties of array:-</b><br>
+                    There are some of the properties of an array that are listed as follows -<br>
+                    <ul>
+                        <li> Each element in an array is of the same data type and carries the same size that is 4 bytes.
+                        </li>
+                        <li>  Elements in the array are stored at contiguous memory locations from which the first element is stored at the smallest memory location.
+                        </li>
+                        <li>Elements of the array can be randomly accessed since we can calculate the address of each element of the array with the given base address and the size of the data element.
+                        </li>
+                    </ul>
+                    <b>Representation of an array</b><br>
+                    We can represent an array in various ways in different programming languages. As an illustration, let's see the declaration of array in java language -
+                    <code>
+                        datatype array_name = new datatype[array_size];  
+                    </code>
+                </p>
+                <P><b>Basic operations:-</b><br>
+                    Now, let's discuss the basic operations supported in the array -<br>
+                    <ul>
+                        <li>Traversal - This operation is used to print the elements of the array.</li>
+                        <li>Insertion - It is used to add an element at a particular index.</li>
+                        <li>Deletion - It is used to delete an element from a particular index.</li>
+                        <li>Search - It is used to search an element using the given index or by the value.</li>
+                        <li>Update - It updates an element at a particular index.</li>
+                    </ul>
+                    <p>                
+            </section>
+            <section class="main-section" id="Sorting">
+                <header>
+                    Sorting
+                </header>
+                <br>
+                Sorting refers to arranging data in a particular format. Sorting algorithm specifies the way to arrange data in a particular order. Most common orders are in numerical or lexicographical order.
+                <br>
+                The importance of sorting lies in the fact that data searching can be optimized to a very high level, if data is stored in a sorted manner. Sorting is also used to represent data in more readable formats. Following are some of the examples of sorting in real-life scenarios −
+                <br>
+                <ul>
+                    <li><b>Telephone Directory −</b>The telephone directory stores the telephone numbers of people sorted by their names, so that the names can be searched easily.</li>
+                    <li><b>Dictionary −</b>The dictionary stores words in an alphabetical order so that searching of any word becomes easy.</li>
+                </ul>
+                <b>In-place Sorting and Not-in-place Sorting</b><br>
+                Sorting algorithms may require some extra space for comparison and temporary storage of few data elements. These algorithms do not require any extra space and sorting is said to happen in-place, or for example, within the array itself. This is called in-place sorting. Bubble sort is an example of in-place sorting. <br>
+                However, in some sorting algorithms, the program requires space which is more than or equal to the elements being sorted. Sorting which uses equal or more space is called not-in-place sorting. Merge-sort is an example of not-in-place sorting. <br>
+                <br>
+                <b>Stable and Not Stable Sorting</b> <br>
+                If a sorting algorithm, after sorting the contents, does not change the sequence of similar content in which they appear, it is called stable sorting.
+                <br>
+                <img src="https://www.tutorialspoint.com/data_structures_algorithms/images/stable_sort.jpg
+                " alt=""><br>
+                If a sorting algorithm, after sorting the contents, changes the sequence of similar content in which they appear, it is called unstable sorting. <br>
+                <img src="	https://www.tutorialspoint.com/data_structures_algorithms/images/unstable_sort.jpg" alt=""> <br>
+                Stability of an algorithm matters when we wish to maintain the sequence of original elements, like in a tuple for example. <br>
+                <b>Adaptive and Non-Adaptive Sorting Algorithm</b> <br>
+                A sorting algorithm is said to be adaptive, if it takes advantage of already 'sorted' elements in the list that is to be sorted. That is, while sorting if the source list has some element already sorted, adaptive algorithms will take this into account and will try not to re-order them. <br>
+                A non-adaptive algorithm is one which does not take into account the elements which are already sorted. They try to force every single element to be re-ordered to confirm their sortedness. <br>
+                <br>
+                <b>Important Terms</b> <br>
+                Some terms are generally coined while discussing sorting techniques, here is a brief introduction to them − <br>
+                <b>Increasing Order</b><br>
+                A sequence of values is said to be in increasing order, if the successive element is greater than the previous one. For example, 1, 3, 4, 6, 8, 9 are in increasing order, as every next element is greater than the previous element. <br>
+                <b>Decreasing Order</b><br>
+                A sequence of values is said to be in decreasing order, if the successive element is less than the current one. For example, 9, 8, 6, 4, 3, 1 are in decreasing order, as every next element is less than the previous element. <br>
+                <b>Non-Increasing Order</b><br>
+                A sequence of values is said to be in non-increasing order, if the successive element is less than or equal to its previous element in the sequence. This order occurs when the sequence contains duplicate values. For example, 9, 8, 6, 3, 3, 1 are in non-increasing order, as every next element is less than or equal to (in case of 3) but not greater than any previous element. <br>
+                <b>Non-Decreasing Order</b> <br>
+                A sequence of values is said to be in non-decreasing order, if the successive element is greater than or equal to its previous element in the sequence. This order occurs when the sequence contains duplicate values. For example, 1, 3, 3, 6, 8, 9 are in non-decreasing order, as every next element is greater than or equal to (in case of 3) but not less than the previous one.
+                <p>
+  
+            <section class="main-section" id="Searching">
+                <header>
+                    Searching
+                </header>
+                <p>
+                    There are two types of Searching 
+                    <ul>
+                        <li>Linear search</li>
+                        <li>Binary search</li>
+                    </ul>
+                    <br>
+                    <b>Linear search :-</b><br>Linear search is used to search a key element from multiple elements. Linear search is less used today because it is slower than binary search and hashing.
+                    <br><br>
+                    Algorithm:
+                    <br><br>
+                    <code>
+                    Step 1: Traverse the array<br>
+                    Step 2: Match the key element with array element.<br>
+                    Step 3: If key element is found, return the index position of the array element.<br>
+                    Step 4: If key element is not found, return -1.<br>
+                    </code>
+                    <br><br>
+                    <b>Binary search</b><br>
+                    Binary search is the search technique that works efficiently on sorted lists. Hence, to search an element into some list using the binary search technique, we must ensure that the list is sorted.<br>
+                    Binary search follows the divide and conquer approach in which the list is divided into two halves, and the item is compared with the middle element of the list. If the match is found then, the location of the middle element is returned. Otherwise, we search into either of the halves depending upon the result produced through the match.
+                    <br><br>
+                    Algorithm:
+                    <br><br>
+                    <code>
+                        Step 1: set beg = lower_bound, end = upper_bound, pos = - 1 <br>
+                        Step 2: repeat steps 3 and 4 while beg <=end   <br>
+                        Step 3: set mid = (beg + end)/2   <br>
+                        Step 4: if a[mid] = val  <br>
+                        set pos = mid   <br>
+                        print pos   <br>
+                        go to step 6   <br>
+                        else if a[mid] > val<br>  
+                        set end = mid - 1   <br>
+                        else  <br>
+                        set beg = mid + 1 <br>  
+                        [end of if]   <br>
+                        [end of loop]   <br>
+                        Step 5: if pos = -1  <br> 
+                        print "value is not present in the array"  <br> 
+                        [end of if]   <br>
+                        Step 6: exit   <br>
+                    </code>
+                </p>
+                    
+            </section>
+  
+            <section class="main-section" id="LinkedList">
+                <header>
+                   Linked List
+                </header>  
+                <p>
+                    A linked list is a sequence of data structures, which are connected together via links. <br>
+                    Linked List is a sequence of links which contains items. Each link contains a connection to another link. Linked list is the second most-used data structure after array. Following are the important terms to understand the concept of Linked List. <br>
+                    <ul>
+                        <li><b>Link − </b>Each link of a linked list can store a data called an element.</li>
+                        <li><b>Next −</b> Each link of a linked list contains a link to the next link called Next.</li>
+                        <li><b>LinkedList −</b> A Linked List contains the connection link to the first link called First.</li>
+                    </ul>
+                    <b>Linked List Representation</b><br>
+                    Linked list can be visualized as a chain of nodes, where every node points to the next node.
+                    <br>
+                    <img src="https://www.tutorialspoint.com/data_structures_algorithms/images/linked_list.jpg" alt=""><br>
+                    As per the above illustration, following are the important points to be considered.
+                    <ul>
+                        <li>Linked List contains a link element called first.</li>
+                        <li>Each link carries a data field(s) and a link field called next.</li>
+                        <li>Each link is linked with its next link using its next link.</li>
+                        <li>Last link carries a link as null to mark the end of the list.</li>
+                    </ul>
+                    <b> Types of Linked List</b><br>
+                    Following are the various types of linked list. <br>
+                    <ul>
+                        <li><b>Simple Linked List −</b Item navigation is forward only.></li>
+                        <li><b>Doubly Linked List − </b>Items can be navigated forward and backward.</li>
+                        <li><b>Circular Linked List − </b>Last item contains link of the first element as next and the first element has a link to the last element as previous.</li>
+                    </ul>      
+                    <b>Basic Operations</b><br>
+                    Following are the basic operations supported by a list. <br>
+                    <ul>
+                        <li><b>Insertion −</b>Adds an element at the beginning of the list.</li>
+                        <li><b>Deletion −</b>Deletes an element at the beginning of the list</li>
+                        <li><b>Display −</b> Displays the complete list.</li>
+                        <li><b> Search −</b> Searches an element using the given key.</li>
+                        <li><b> Delete −</b> Deletes an element using the given key.</li>
+
+                    </ul>
+                    <b> Insertion Operation</b><br>          
+                    Adding a new node in linked list is a more than one step activity. We shall learn this with diagrams here. First, create a node using the same structure and find the location where it has to be inserted.
+                    <br>
+                    <img src="https://www.tutorialspoint.com/data_structures_algorithms/images/linked_list_insertion_0.jpg" alt="">
+                    <br>
+                    Linked List Insertion
+                    Imagine that we are inserting a node B (NewNode), between A (LeftNode) and C (RightNode). Then point B.next to C −
+                    <code>NewNode.next −> RightNode;</code>
+                    
+                    It should look like this −<br>
+                    <img src="	https://www.tutorialspoint.com/data_structures_algorithms/images/linked_list_insertion_1.jpg" alt=""><br>
+                
+                    Now, the next node at the left should point to the new node.
+                    <code>LeftNode.next −> NewNode;</code>
+                    <img src="https://www.tutorialspoint.com/data_structures_algorithms/images/linked_list_insertion_2.jpg" alt=""><br>
+                   
+                    This will put the new node in the middle of the two. The new list should look like this −<br>
+                    <img src="https://www.tutorialspoint.com/data_structures_algorithms/images/linked_list_insertion_3.jpg" alt=""> <br>
+               
+                    Similar steps should be taken if the node is being inserted at the beginning of the list. While inserting it at the end, the second last node of the list should point to the new node and the new node will point to NULL. <br>
+                    <br>
+                    <b>Deletion Operation</b>
+                    Deletion is also a more than one step process. We shall learn with pictorial representation. First, locate the target node to be removed, by using searching algorithms. <br>
+                    <img src="	https://www.tutorialspoint.com/data_structures_algorithms/images/linked_list_deletion_0.jpg" alt="">
+                   <br>
+                    The left (previous) node of the target node now should point to the next node of the target node −
+                    <code>LeftNode.next −> TargetNode.next;</code>
+                    <img src="https://www.tutorialspoint.com/data_structures_algorithms/images/linked_list_deletion_1.jpg" alt="">
+                    <br>
+                    This will remove the link that was pointing to the target node. Now, using the following code, we will remove what the target node is pointing at.
+                    <code>TargetNode.next −> NULL;</code>
+                   <img src="	https://www.tutorialspoint.com/data_structures_algorithms/images/linked_list_deletion_2.jpg" alt=""><br>
+                    We need to use the deleted node. We can keep that in memory otherwise we can simply deallocate memory and wipe off the target node completely. <br>
+                    <img src="https://www.tutorialspoint.com/data_structures_algorithms/images/linked_list_deletion_3.jpg" alt="">
+                    <br><br>    
+                </p>
+            </section>
+  
+            <section class="main-section" id="Stack">
+                <header>
+                  Stack
+                </header>
+                <p>
+                    A stack is an Abstract Data Type (ADT), commonly used in most programming languages. It is named stack as it behaves like a real-world stack, for example – a deck of cards or a pile of plates, etc.<br>
+                    <img src="https://www.tutorialspoint.com/data_structures_algorithms/images/stack_example.jpg" alt="plates"><br>
+                    A real-world stack allows operations at one end only. For example, we can place or remove a card or plate from the top of the stack only. Likewise, Stack ADT allows all data operations at one end only. At any given time, we can only access the top element of a stack.<br>
+                    This feature makes it LIFO data structure. LIFO stands for Last-in-first-out. Here, the element which is placed (inserted or added) last, is accessed first. In stack terminology, insertion operation is called PUSH operation and removal operation is called POP operation.
+                    <br><br>
+                    <b>Stack Representation</b><br>
+                        The following diagram depicts a stack and its operations −<br>
+                        <img src="https://www.tutorialspoint.com/data_structures_algorithms/images/stack_representation.jpg" alt="stack daigram"><br>
+                        A stack can be implemented by means of Array, Structure, Pointer, and Linked List. Stack can either be a fixed size one or it may have a sense of dynamic resizing. Here, we are going to implement stack using arrays, which makes it a fixed size stack implementation.
+                        <br>
+                       <b>Basic Operations</b><br> 
+                        Stack operations may involve initializing the stack, using it and then de-initializing it. Apart from these basic stuffs, a stack is used for the following two primary operations −
+                        <ul>
+                            <li><b>push() −</b> Pushing (storing) an element on the stack.</li>
+                            <li><b>pop() −</b>Removing (accessing) an element from the stack.</li>
+                        </ul>
+                        When data is PUSHed onto stack.
+                        <br>
+                        To use a stack efficiently, we need to check the status of stack as well. For the same purpose, the following functionality is added to stacks −
+                        <ul>
+                            <li><b>peek() − </b>get the top data element of the stack, without removing it.</li>
+                            <li><b>isFull() − </b>check if stack is full.</li>
+                            <li><b>isEmpty() − </b>check if stack is empty.</li>
+                        </ul>
+                        At all times, we maintain a pointer to the last PUSHed data on the stack. As this pointer always represents the top of the stack, hence named top. The top pointer provides top value of the stack without actually removing it.
+                        <br><br>
+                        First we should learn about procedures to support stack functions −<br><br>
+                        <b>Push Operation</b><br>
+                            The process of putting a new data element onto stack is known as a Push Operation. Push operation involves a series of steps −<br>
+                        
+                            <b>Step 1 −</b> Checks if the stack is full. <br>
+                            <b>Step 2 −</b> If the stack is full, produces an error and exit.<br>
+                            <b>Step 3 −</b>If the stack is not full, increments top to point next empty space.<br>
+                            <b>Step 4 −</b>Adds data element to the stack location, where top is pointing.<br>
+                            <b>Step 5 − </b>Returns success.<br>
+                            <img src="https://www.tutorialspoint.com/data_structures_algorithms/images/stack_push_operation.jpg" alt=""><br><br>
+
+                        <b>POP Operation</b><br>
+                            Accessing the content while removing it from the stack, is known as a Pop Operation. In an array implementation of pop() operation, the data element is not actually removed, instead top is decremented to a lower position in the stack to point to the next value. But in linked-list implementation, pop() actually removes data element and deallocates memory space.
+                            <br>
+                            A Pop operation may involve the following steps −
+                            <br>
+                            <b>Step 1 −</b>Checks if the stack is empty.<br>
+                            <b>Step 2 −</b> If the stack is empty, produces an error and exit.<br>
+                            <b>Step 3 −</b> If the stack is not empty, accesses the data element at which top is pointing.<br>
+                            <b>Step 4 − </b>Decreases the value of top by 1.<br>
+                            <b>Step 5 −</b>Returns success.
+                            <br><br>
+                            <img src="	https://www.tutorialspoint.com/data_structures_algorithms/images/stack_pop_operation.jpg" alt=""><br><br>
+
+                            <b>Peek Operation</b>
+                            <br>
+                            Algorithm of peek() function −<br>
+                            <code>
+                                begin procedure peek <br>
+                                    return stack[top] <br>
+                                end procedure <br>
+                            </code>
+                </p>
+            </section>
+            <section class="main-section" id="Queue">
+                <header>
+                    Queue
+                </header>
+                <p>
+                    Queue is an abstract data structure, somewhat similar to Stacks. Unlike stacks, a queue is open at both its ends. One end is always used to insert data (enqueue) and the other is used to remove data (dequeue). Queue follows First-In-First-Out methodology, i.e., the data item stored first will be accessed first.
+                    <br>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVTWFrMPoGbjkNJ-NxGldEIwRI_xFe7_32VQ&usqp=CAU" alt="real example"><br>
+                    A real-world example of queue can be a single-lane one-way road, where the vehicle enters first, exits first. More real-world examples can be seen as queues at the ticket windows and bus-stops.
+                    <br>
+                    <b>Queue Representation</b><br>
+                    As we now understand that in queue, we access both ends for different reasons. The following diagram given below tries to explain queue representation as data structure − <br>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxQ2FjPelmsDdaoZNEQyHcQ8Yr08jbNQT4aw&usqp=CAU" alt="technical example"><br>
+                    As in stacks, a queue can also be implemented using Arrays, Linked-lists, Pointers and Structures. For the sake of simplicity, we shall implement queues using one-dimensional array.
+                    <br>
+                    <b>Basic Operation</b><br>
+                    Queue operations may involve initializing or defining the queue, utilizing it, and then completely erasing it from the memory. Here we shall try to understand the basic operations associated with queues −
+                    <ul>
+                        <li><b>enqueue()-</b> add (store) an item to the queue.</li>
+                        <li><b>dequeue()-</b>remove (access) an item from the queue.</li>
+                    </ul><br>
+                    Few more functions are required to make the above-mentioned queue operation efficient. These are −
+                    <ul>
+                        <li><b>peek() −</b> Gets the element at the front of the queue without removing it.</li>
+                        <li><b>isFull-</b> Checks if the queue is full.</li>
+                        <li><b>isEmpty-</b> Checks if the queue is empty.</li>
+                    </ul>
+                    In queue, we always dequeue (or access) data, pointed by front pointer and while enqueing (or storing) data in the queue we take help of rear pointer.
+                    <br>
+                    <b>Enqueue Operation</b><br>
+                    Queues maintain two data pointers, front and rear. Therefore, its operations are comparatively difficult to implement than that of stacks. <br>
+
+                    The following steps should be taken to enqueue (insert) data into a queue −<br>
+
+                    <b>Step 1 −</b> Check if the queue is full. <br>
+
+                    <b>Step 2 − </b>BIf the queue is full, produce overflow error and exit. <br>
+
+                    <b>Step 3 − </b>If the queue is not full, increment rear pointer to point the next empty space. <br>
+
+                    <b>Step 4 −</b> Add data element to the queue location, where the rear is pointing. <br>
+
+                    <b>Step 5 −</b> return success. <br>
+                    <img src="	https://www.tutorialspoint.com/data_structures_algorithms/images/queue_enqueue_diagram.jpg" alt="enqueue"><br> <br>
+                    <b>Dequeue Operation</b><br>
+                    Accessing data from the queue is a process of two tasks − access the data where front is pointing and remove the data after access. The following steps are taken to perform dequeue operation −<br>
+
+                    <b>Step 1 − C</b>heck if the queue is empty. <br>
+
+                    <b>Step 2 −</b> If the queue is empty, produce underflow error and exit. <br>
+
+                    <b>Step 3 −</b> If the queue is not empty, access the data where front is pointing. <br>
+
+                    <b>Step 4 −</b> Increment front pointer to point to the next available data element. <br>
+
+                    <b>Step 5 −</b> Return success. <br>
+                    <img src="https://www.tutorialspoint.com/data_structures_algorithms/images/queue_dequeue_diagram.jpg" alt="dequeue"><br><br>
+                    <b>Peek Operation</b><br>
+                    This function helps to see the data at the front of the queue. The algorithm of peek() function is as follows −<br>
+                    Algorithm
+                    <code>
+                        begin procedure peek <br>
+                        return queue[front] <br>
+                        end procedure <br>
+                    </code>
+                </p>
+            </section>
+            <section class="main-section" id="Tree">
+                <header>
+                    Tree
+                </header>
+                <p>
+                    Tree represents the nodes connected by edges. We will discuss binary tree or binary search tree specifically.
+                    <br>
+                    Binary Tree is a special datastructure used for data storage purposes. A binary tree has a special condition that each node can have a maximum of two children. A binary tree has the benefits of both an ordered array and a linked list as search is as quick as in a sorted array and insertion or deletion operation are as fast as in linked list.<br><br>
+                    <img src="	https://www.tutorialspoint.com/data_structures_algorithms/images/binary_tree.jpg " alt="tree">
+                    <br>
+                    <b>Important Terms</b><br>
+                    Following are the important terms with respect to tree.
+                    <ul>
+                        <li><b>Path −</b> Path refers to the sequence of nodes along the edges of a tree.</li>
+                        <li><b>Root − </b>The node at the top of the tree is called root. There is only one root per tree and one path from the root node to any node.</li>
+                        <li><b>Parent −</b> Any node except the root node has one edge upward to a node called parent.</li>
+                        <li><b>Child −</b> The node below a given node connected by its edge downward is called its child node.</li>
+                        <li><b>Leaf −</b> The node which does not have any child node is called the leaf node.</li>
+                        <li>Subtree − <b></b>Subtree represents the descendants of a node.</li>
+                        <li><b>Visiting −</b> Visiting refers to checking the value of a node when control is on the node.</li>
+                        <li><b>Traversing − </b>Traversing means passing through nodes in a specific order.</li>
+                        <li><b>Levels − </b>Level of a node represents the generation of a node. If the root node is at level 0, then its next child node is at level 1, its grandchild is at level 2, and so on.</li>
+                        <li><b>keys − </b>Key represents a value of a node based on which a search operation is to be carried out for a node.</li>
+                    </ul>
+                    <b>Binary Search Tree Representation</b><br><br>
+                        Binary Search tree exhibits a special behavior. A node's left child must have a value less than its parent's value and the node's right child must have a value greater than its parent value.
+                        <br>
+                        <img src="https://www.tutorialspoint.com/data_structures_algorithms/images/binary_search_tree.jpg" alt="tree">
+                        <br>
+                        We're going to implement tree using node object and connecting them through references.
+                        <br><br>
+                    <b>Tree Node:-</b><br>
+                        The code to write a tree node would be similar to what is given below. It has a data part and references to its left and right child nodes.
+                        <code>
+                            struct node {<br>
+                                int data;   <br>
+                                struct node *leftChild;<br>
+                                struct node *rightChild;<br>
+                             };<br>
+                        </code>
+                        <br>
+                        In a tree, all nodes share common <br><br>
+                        <b>BST Basic Operations</b><br>
+                        The basic operations that can be performed on a binary search tree data structure, are the following −
+                        <ul>
+                            <li><b>Insert −</b> Inserts an element in a tree/create a tree.</li>
+                            <li><b>Search −</b> Searches an element in a tree.</li>
+                            <li><b>Preorder Traversal −</b> Traverses a tree in a pre-order manner.</li>
+                            <li><b>Inorder Traversal −</b> Traverses a tree in an in-order manner.</li>
+                            <li> <b>Postorder Traversal −</b> Traverses a tree in a post-order manner.</li>
+                        </ul>
+            </section>
+            <section class="main-section" id="Graph">
+                <header>
+                    Graph
+                </header>
+                <p>
+                    A graph is a pictorial representation of a set of objects where some pairs of objects are connected by links. The interconnected objects are represented by points termed as vertices, and the links that connect the vertices are called edges.
+                    <br><br>
+                    Formally, a graph is a pair of sets (V, E), where V is the set of vertices and E is the set of edges, connecting the pairs of vertices. Take a look at the following graph −
+                    <br>
+                    <img src="	https://www.tutorialspoint.com/data_structures_algorithms/images/graph_basics.jpg" alt="Graph">
+                    <br>
+                    In the above graph,
+                    <br>
+                    V = {a, b, c, d, e}
+                    <br>
+                    E = {ab, ac, bd, cd, de}
+                    <br><br>
+                    <B>Graph Data Structure:-</B><br>
+                    Mathematical graphs can be represented in data structure. We can represent a graph using an array of vertices and a two-dimensional array of edges. Before we proceed further, let's familiarize ourselves with some important terms −
+                    <br>
+                   <ul>
+                    <li>Vertex − Each node of the graph is represented as a vertex. In the following example, the labeled circle represents vertices. Thus, A to G are vertices. We can represent them using an array as shown in the following image. Here A can be identified by index 0. B can be identified using index 1 and so on.</li>
+                    <li>
+                        Edge − Edge represents a path between two vertices or a line between two vertices. In the following example, the lines from A to B, B to C, and so on represents edges. We can use a two-dimensional array to represent an array as shown in the following image. Here AB can be represented as 1 at row 0, column 1, BC as 1 at row 1, column 2 and so on, keeping other combinations as 0.
+                    </li>
+                    <li>
+                        Adjacency − Two node or vertices are adjacent if they are connected to each other through an edge. In the following example, B is adjacent to A, C is adjacent to B, and so on.
+                    </li>
+                   </ul>               
+                    <br>
+                    Path − Path represents a sequence of edges between the two vertices. In the following example, ABCD represents a path from A to D.
+                    <br>
+                    <img src="https://www.tutorialspoint.com/data_structures_algorithms/images/graph.jpg" alt="Graph">
+                    <br>
+                    <b>Basic Operations</b>
+                    Following are basic primary operations of a Graph −
+                    <ul>
+                        <li><b> Vertex −</b> Adds a vertex to the graph.</li>
+                        <li><b> Edge − </b>Adds an edge between the two vertices of the graph.</li>
+                        <li><b>Display Vertex −</b> Displays a vertex of the graph.</li>
+                    </ul>
+                </p>
+            </section>
+        </main>
+    </div>
+</body>
+  
+</html>
+    
+</body>
+</html>
